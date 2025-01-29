@@ -127,7 +127,7 @@ function App() {
       <div className="py-20">
         <div className="container mx-auto px-4">
           <div className="max-w-md mx-auto bg-white bg-opacity-10 backdrop-blur-lg rounded-xl p-8 shadow-2xl">
-            <h2 className="text-3xl font-bold text-center mb-8">Contact Us</h2>
+            <h2 className="text-3xl font-bold text-center mb-8">Let's Connect</h2>
             <div className="space-y-6">
               <button
                 onClick={handleWhatsAppClick}
