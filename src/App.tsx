@@ -99,34 +99,35 @@ function App() {
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
             Connect With Us
           </h2>
-       <div className="grid grid-cols-2 md:grid-cols-6 gap-8 max-w-5xl mx-auto">
-  {[
-    { icon: <Facebook className="w-8 h-8" />, name: 'Facebook', link: 'https://www.facebook.com/profile.php?id=61572169993093', color: 'hover:text-blue-500' },
-    { icon: <Instagram className="w-8 h-8" />, name: 'Instagram', link: 'https://www.instagram.com/minisalepoint', color: 'hover:text-pink-500' },
-    { icon: <MessageCircle className="w-8 h-8" />, name: 'WhatsApp', link: 'https://api.whatsapp.com/send?phone=923124107512', color: 'hover:text-green-500' },
-    { icon: <Video className="w-8 h-8" />, name: 'TikTok', link: 'https://www.tiktok.com/@minisalepoint', color: 'hover:text-purple-500' },
-    { icon: <Youtube className="w-8 h-8" />, name: 'YouTube', link: 'https://www.youtube.com/@MiniSalePoint-ot5lr', color: 'hover:text-red-500' },
-    { icon: <Youtube className="w-8 h-8" />, name: 'SnackVideo', link: 'https://www.snackvideo.com/@Minisalepoint', color: 'hover:text-red-500' },
-  ].map((social, index) => (
-    <a
-      key={index}
-      href={social.link}
-      target="_blank"  // Open in a new tab
-      rel="noopener noreferrer"  // Security feature
-      className={`transform hover:scale-110 transition-all duration-300 ${social.color}`}
-    >
-      <div className="flex flex-col items-center space-y-2 p-4 rounded-lg bg-white bg-opacity-5 backdrop-blur-lg hover:bg-opacity-10">
-        {social.icon}
-        <span className="text-sm">{social.name}</span>
+          <div className="grid grid-cols-2 md:grid-cols-6 gap-8 max-w-5xl mx-auto">
+            {[
+              { icon: <Facebook className="w-8 h-8" />, name: 'Facebook', link: 'https://www.facebook.com/profile.php?id=61572169993093', color: 'hover:text-blue-500' },
+              { icon: <Instagram className="w-8 h-8" />, name: 'Instagram', link: 'https://www.instagram.com/minisalepoint', color: 'hover:text-pink-500' },
+              { icon: <MessageCircle className="w-8 h-8" />, name: 'WhatsApp', link: 'https://api.whatsapp.com/send?phone=923124107512', color: 'hover:text-green-500' },
+              { icon: <Video className="w-8 h-8" />, name: 'TikTok', link: 'https://www.tiktok.com/@minisalepoint', color: 'hover:text-purple-500' },
+              { icon: <Youtube className="w-8 h-8" />, name: 'YouTube', link: 'https://www.youtube.com/@MiniSalePoint-ot5lr', color: 'hover:text-red-500' },
+              { icon: <Youtube className="w-8 h-8" />, name: 'SnackVideo', link: 'https://www.snackvideo.com/@Minisalepoint', color: 'hover:text-red-500' },
+            ].map((social, index) => (
+              <a
+                key={index}
+                href={social.link}
+                className={`transform hover:scale-110 transition-all duration-300 ${social.color}`}
+              >
+                <div className="flex flex-col items-center space-y-2 p-4 rounded-lg bg-white bg-opacity-5 backdrop-blur-lg hover:bg-opacity-10">
+                  {social.icon}
+                  <span className="text-sm">{social.name}</span>
+                </div>
+              </a>
+            ))}
+          </div>
+        </div>
       </div>
-    </a>
-  ))}
-</div>
+
       {/* Contact Section */}
       <div className="py-20">
         <div className="container mx-auto px-4">
           <div className="max-w-md mx-auto bg-white bg-opacity-10 backdrop-blur-lg rounded-xl p-8 shadow-2xl">
-            <h2 className="text-3xl font-bold text-center mb-8">Let's Connect</h2>
+            <h2 className="text-3xl font-bold text-center mb-8">Contact Us</h2>
             <div className="space-y-6">
               <button
                 onClick={handleWhatsAppClick}
