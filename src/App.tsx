@@ -99,15 +99,26 @@ function App() {
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
             Connect With Us
           </h2>
-          <div className="grid grid-cols-2 md:grid-cols-6 gap-8 max-w-5xl mx-auto">
-            {[
-              { icon: <Facebook className="w-8 h-8" />, name: 'Facebook', link: 'https://www.facebook.com/profile.php?id=61572169993093', color: 'hover:text-blue-500' },
-              { icon: <Instagram className="w-8 h-8" />, name: 'Instagram', link: 'https://www.instagram.com/minisalepoint', color: 'hover:text-pink-500' },
-              { icon: <MessageCircle className="w-8 h-8" />, name: 'WhatsApp', link: 'https://api.whatsapp.com/send?phone=923124107512', color: 'hover:text-green-500' },
-              { icon: <Video className="w-8 h-8" />, name: 'TikTok', link: 'https://www.tiktok.com/@minisalepoint', color: 'hover:text-purple-500' },
-              { icon: <Youtube className="w-8 h-8" />, name: 'YouTube', link: 'https://www.youtube.com/@MiniSalePoint-ot5lr', color: 'hover:text-red-500' },
-              { icon: <Youtube className="w-8 h-8" />, name: 'SnackVideo', link: 'https://www.snackvideo.com/@Minisalepoint', color: 'hover:text-red-500' },
-            ].map((social, index) => (
+         <div className="grid grid-cols-2 md:grid-cols-6 gap-8 max-w-5xl mx-auto">
+  {[
+    { icon: <Facebook className="w-8 h-8" />, name: 'Facebook', link: 'https://www.facebook.com/profile.php?id=61572169993093', color: 'hover:text-blue-500' },
+    { icon: <Instagram className="w-8 h-8" />, name: 'Instagram', link: 'https://www.instagram.com/minisalepoint', color: 'hover:text-pink-500' },
+    { icon: <MessageCircle className="w-8 h-8" />, name: 'WhatsApp', link: 'https://api.whatsapp.com/send?phone=923124107512', color: 'hover:text-green-500' },
+    { icon: <Video className="w-8 h-8" />, name: 'TikTok', link: 'https://www.tiktok.com/@minisalepoint', color: 'hover:text-purple-500' },
+    { icon: <Youtube className="w-8 h-8" />, name: 'YouTube', link: 'https://www.youtube.com/@MiniSalePoint-ot5lr', color: 'hover:text-red-500' },
+    { icon: <Youtube className="w-8 h-8" />, name: 'SnackVideo', link: 'https://www.snackvideo.com/@Minisalepoint', color: 'hover:text-red-500' },
+  ].map((social, index) => (
+    <a 
+      key={index} 
+      href={social.link} 
+      target="_blank" 
+      rel="noopener noreferrer"
+      className={social.color}
+    >
+      {social.icon}
+    </a>
+  ))}
+</div>
               <a
                 key={index}
                 href={social.link}
