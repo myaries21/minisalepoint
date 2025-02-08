@@ -46,8 +46,7 @@ function App() {
                 <div className="relative w-32 h-32 rounded-full bg-gradient-to-r from-purple-500 to-pink-500 flex items-center justify-center border-4 border-white border-opacity-20 shadow-2xl transform group-hover:scale-105 transition-all duration-300">
                   {/* Replacing Store icon with the provided image */}
                   <img 
-                    src="https://scontent.fskt5-1.fna.fbcdn.net/v/t39.30808-6/474774401_122102678642738999_4754593664870293401_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=swKHz0TV3iIQ7kNvgHHbKru&_nc_zt=23&_nc_ht=scontent.fskt5-1.fna&_nc_gid=AUA1vqAE-qeMyleDzgp81PJ&oh=00_AYA69wZ7veEwUl9V1Rsu7YQzbjxdKup5DwZeZse8xC778w&oe=67A03010" 
-                    alt="Business Logo" 
+                    src="https://www.facebook.com/photo/?fbid=122102678636738999&set=a.122102678672738999" 
                     className="w-28 h-28 rounded-full object-cover group-hover:scale-110 transition-transform duration-300"
                   />
                 </div>
